@@ -3,6 +3,9 @@ package tracker;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created for each semester/term and contains a number of StudyEntries
+ */
 public class StudyPeriod {
     String name;
     int weeks;
