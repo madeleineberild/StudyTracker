@@ -1,4 +1,4 @@
-package util;
+package src.main.java.util;
 
 public class FileReader {
 }

@@ -1,4 +1,4 @@
-package tracker;
+package src.main.java.tracker;
 
 import java.util.ArrayList;
 import java.util.List;
