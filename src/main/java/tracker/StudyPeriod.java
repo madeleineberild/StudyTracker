@@ -25,6 +25,10 @@ public class StudyPeriod {
         return weeks;
     }
 
+    public void record(StudyEntry e) {
+        recorded.add(e);
+    }
+
     public void getRecorded() {
         //TODO: hitta ett sätt där vi kan ge ut en struktur med alla entries
         // (till statistics) som inte är mutable och kan fucka upp allt
