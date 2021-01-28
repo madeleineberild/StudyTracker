@@ -1,3 +1,7 @@
+# gradle stuff idk if this should be excluded but anyways
+.gradle/
+build/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
