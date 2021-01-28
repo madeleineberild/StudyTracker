@@ -30,7 +30,7 @@ public class StudyEntry {
     }
 
     //Not sure about this implementation, but worth a try.
-    public boolean isOfSuject(Subject subject) {
+    public boolean isOfSubject(Subject subject) {
         return subject.getClass() == this.subject.getClass();
     }
 
@@ -38,29 +38,29 @@ public class StudyEntry {
         return this.description;
     }
 
-    public void adDescription(String desc) {
+    public void addDescription(String desc) {
         this.description += " " + desc;
     }
 
     //Builder pattern, if needed.
-    public class StudyEntryBuidler {
+    public class StudyEntryBuilder {
         private LocalTime time;
         private String description;
         private Subject subject;
 
-        public StudyEntryBuidler () {}
+        public StudyEntryBuilder () {}
 
-        public StudyEntryBuidler time(LocalTime time) {
+        public StudyEntryBuilder time(LocalTime time) {
             this.time = time;
             return this;
         }
 
-        public StudyEntryBuidler subject(Subject subject) {
+        public StudyEntryBuilder subject(Subject subject) {
             this.subject = subject;
             return this;
         }
 
-        public StudyEntryBuidler description(String description) {
+        public StudyEntryBuilder description(String description) {
             this.description = description;
             return this;
         }
